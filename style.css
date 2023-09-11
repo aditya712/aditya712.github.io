@@ -1,0 +1,169 @@
+.fullscreen-container {
+    background-color: #ccc;
+    /* Grey color */
+    height: 100vh;
+    /* 100% of viewport height */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    overflow: hidden;
+}
+
+
+/* Nested container */
+
+.nested-container-left {
+    background-color: aliceblue;
+    /* Yellow background */
+    width: 50vh;
+    /* 50% width of the parent container */
+    height: 60vh;
+    padding: 20px;
+    /* Add some padding for content */
+    font-size: 1.8vw;
+}
+
+.nested-container-right {
+    background-color: rgb(240, 240, 240);
+    /* Yellow background */
+    width: 50vh;
+    /* 50% width of the parent container */
+    height: 60vh;
+    padding: 20px;
+    /* Add some padding for content */
+    font-size: 1.5vw;
+}
+
+
+/* Second column (scrollable) */
+
+.left {
+    background-color: rgb(200, 200, 200);
+    width: 35vh;
+    height: 50vh;
+}
+
+
+/* Hide the default scrollbar */
+
+.scrollable-column {
+    background-color: rgb(118, 118, 118);
+    width: 35vh;
+    height: 50vh;
+    overflow-y: scroll;
+    /* Adding the ability to scroll */
+}
+
+
+/* Hiding scrollbar for Chrome, Safari and Opera */
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hiding scrollbar for IE, Edge and Firefox */
+
+.content {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.photo {
+    background-color: #9f9f9f;
+}
+
+* {
+    font-family: CustomFont;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./Lato/Lato-Light.ttf') format('truetype');
+    /* You can add multiple src lines for different font formats */
+}
+
+
+/* styles.css */
+
+
+/* styles.css */
+
+nav {
+    background-color: transparent;
+    color: #fff;
+    height: fit-content;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Make the list items horizontal */
+    justify-content: space-between;
+    /* Distribute space between items */
+    align-items: center;
+    /* Vertically center items */
+}
+
+.nav-list li {
+    /* Remove display: inline-block; */
+    /* Remove margin-right: 20px; */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: rgb(127, 123, 123);
+    width: max-content;
+    /* Remove background color */
+    border: none;
+    /* Remove button border */
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+.about {
+    background-color: rgb(186, 186, 186);
+    height: max-content;
+    color: #484848;
+}
+
+.education {
+    background-color: rgb(1, 1, 1);
+    height: max-content;
+}
+
+.skills {
+    background-color: red;
+    height: max-content;
+}
+
+.projects {
+    background-color: rgb(1, 1, 1);
+    height: max-content;
+}
+
+.contact {
+    background-color: rgb(213, 85, 85);
+    height: max-content;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Add more styles as needed */
