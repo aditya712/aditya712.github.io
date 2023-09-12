@@ -1,169 +1,174 @@
-.fullscreen-container {
-    background-color: #ccc;
-    /* Grey color */
-    height: 100vh;
-    /* 100% of viewport height */
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    overflow: hidden;
-}
-
-
-/* Nested container */
-
-.nested-container-left {
-    background-color: aliceblue;
-    /* Yellow background */
-    width: 50vh;
-    /* 50% width of the parent container */
-    height: 60vh;
-    padding: 20px;
-    /* Add some padding for content */
-    font-size: 1.8vw;
-}
-
-.nested-container-right {
-    background-color: rgb(240, 240, 240);
-    /* Yellow background */
-    width: 50vh;
-    /* 50% width of the parent container */
-    height: 60vh;
-    padding: 20px;
-    /* Add some padding for content */
-    font-size: 1.5vw;
-}
-
-
-/* Second column (scrollable) */
-
-.left {
-    background-color: rgb(200, 200, 200);
-    width: 35vh;
-    height: 50vh;
-}
-
-
-/* Hide the default scrollbar */
-
-.scrollable-column {
-    background-color: rgb(118, 118, 118);
-    width: 35vh;
-    height: 50vh;
-    overflow-y: scroll;
-    /* Adding the ability to scroll */
-}
-
-
-/* Hiding scrollbar for Chrome, Safari and Opera */
-
-.content::-webkit-scrollbar {
-    display: none;
-}
-
-
-/* Hiding scrollbar for IE, Edge and Firefox */
-
-.content {
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-}
-
-.photo {
-    background-color: #9f9f9f;
-}
-
-* {
-    font-family: CustomFont;
-}
-
-@font-face {
-    font-family: 'CustomFont';
-    src: url('./Lato/Lato-Light.ttf') format('truetype');
-    /* You can add multiple src lines for different font formats */
-}
-
-
-/* styles.css */
-
-
-/* styles.css */
-
-nav {
-    background-color: transparent;
-    color: #fff;
-    height: fit-content;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    /* Make the list items horizontal */
-    justify-content: space-between;
-    /* Distribute space between items */
-    align-items: center;
-    /* Vertically center items */
-}
-
-.nav-list li {
-    /* Remove display: inline-block; */
-    /* Remove margin-right: 20px; */
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.nav-button {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 15px;
-    background-color: rgb(127, 123, 123);
-    width: max-content;
-    /* Remove background color */
-    border: none;
-    /* Remove button border */
-    cursor: pointer;
-    border-radius: 8%;
-}
-
-.about {
-    background-color: rgb(186, 186, 186);
-    height: max-content;
-    color: #484848;
-}
-
-.education {
-    background-color: rgb(1, 1, 1);
-    height: max-content;
-}
-
-.skills {
-    background-color: red;
-    height: max-content;
-}
-
-.projects {
-    background-color: rgb(1, 1, 1);
-    height: max-content;
-}
-
-.contact {
-    background-color: rgb(213, 85, 85);
-    height: max-content;
-}
-
-.hidden {
-    display: none;
-}
-
-
-/* Add more styles as needed */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Latooo';
+    }
+    
+    body {
+        background-color: #ccc;
+        font-family: 'Latooo';
+    }
+    
+    .fullscreen-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .nested-container {
+        width: 50vh;
+        height: 60vh;
+        padding: 20px;
+    }
+    
+    .left {
+        background-color: aliceblue;
+    }
+    
+    .right {
+        background-color: rgb(240, 240, 240);
+    }
+    
+    .container {
+        max-width: 960px;
+        height: 40vh;
+        background-color: rgba(104, 104, 104, 0.29);
+        border-radius: 2%;
+        padding-top: 3%;
+        font-size: 2%;
+    }
+    
+    nav {
+        background-color: transparent;
+        color: #fff;
+        height: fit-content;
+    }
+    
+    .nav-list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: space-around;
+    }
+    
+    .nav-item {
+        margin: 0;
+    }
+    
+    .nav-button {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 15px;
+        background-color: rgb(127, 123, 123);
+        width: max-content;
+        border: none;
+        cursor: pointer;
+        border-radius: 8%;
+        font-size: 1.4vh;
+        font-family: LatoBold;
+    }
+    
+    .section {
+        background-color: transparent;
+        height: max-content;
+    }
+    
+    .section .scrollable-content {
+        height: 40vh;
+    }
+    
+    .scrollable-content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .scrollable-content {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        font-size: 1.5vw;
+    }
+    
+    .text {
+        font-size: medium;
+        color: rgb(0, 0, 0);
+    }
+    
+    .text-education {
+        font-size: small;
+        color: rgb(0, 0, 0);
+    }
+    
+    .hidden {
+        display: none
+    }
+    
+    .education-details {
+        color: grey;
+    }
+    
+    .education-item {
+        padding-bottom: 10px;
+    }
+    
+    .education-item h6 {
+        color: rgb(0, 0, 0);
+        font-family: LatoBoldItalics;
+        padding-bottom: 1px;
+    }
+    
+    .education-item span {
+        display: block;
+        margin-bottom: 1px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .fullscreen-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .nested-container {
+            width: 90%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .container {
+            height: auto;
+            max-width: 100%;
+        }
+        .nav-list {
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-item {
+            margin: 5px 0;
+        }
+        .nav-button {
+            font-size: 5vw;
+            padding: 10px 20px;
+        }
+        .nested-container.right {
+            padding: 5px;
+        }
+        .nested-container.right .content {
+            font-size: 4vw;
+        }
+    }
+    
+    @font-face {
+        font-family: 'Latooo';
+        src: url('./Lato/Lato-BlackItalic.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'LatoBold';
+        src: url('./Lato/Lato-Bold.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'LatoBoldItalics';
+        src: url('./Lato/Lato-Black.ttf') format('truetype');
+    }

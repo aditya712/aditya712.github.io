@@ -4,81 +4,258 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-2f2c97b59e4788b42ea1e56b83d9fc2f27aa4b73ca6347fc2bfa45883af84d24" crossorigin="anonymous">
-
 </head>
 
 <body class="fullscreen-container">
     <div class="fullscreen-container">
-        <div class="nested-container-left">
-            <div class="photo">
-
-            </div>
-
-
+        <div class="nested-container left">
+            <div class="photo"></div>
         </div>
-        <div class="nested-container-right">
+        <div class="nested-container right">
             <div class="content">
-                <h4 class="custom">Hi!</h4>
-                <p>I'm Aditya Thapa and Welcome To my page.</p>
+                <h2>Hi!</h2>
+                <span>I'm Aditya Thapa</span>
+                <h6>Software Developer From Sikkim,India.</h6>
             </div>
+
             <nav>
                 <ul class="nav-list">
-                    <li><button class="nav-button" onclick="toggleSection('#about')">About</button></li>
-                    <li><button class="nav-button" onclick="toggleSection('#education')">Education</button></li>
-                    <li><button class="nav-button" onclick="toggleSection('#skills')">Skills</button></li>
-                    <li><button class="nav-button" onclick="toggleSection('#projects')">Projects</button></li>
-                    <li><button class="nav-button" onclick="toggleSection('#contact')">Contact</button></li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="toggleSection('#about')">
+                About
+              </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="toggleSection('#education')">
+                Education
+              </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="toggleSection('#skills')">
+                Skills
+              </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="toggleSection('#projects')">
+                Projects
+              </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="toggleSection('#contact')">
+                Contact
+              </button>
+                    </li>
                 </ul>
             </nav>
 
-
             <div class="container">
-                <section id="about" class="about ">
-                    <p>I'm Aditya Thapa, a passionate software developer dedicated to crafting innovative solutions. With a strong foundation in web development and a commitment to lifelong learning, I thrive on solving complex problems and delivering exceptional
-                        digital experiences. Let's connect and bring your ideas to life through technology.</p>
-                </section>
+                <section id="education" class="section hidden">
+                    <div class="education-details">
+                        <div class="education-item">
+                            <h6>
+                                Bachelor of Technology (B.Tech)<br />Computer Science and Engineering
+                            </h6>
+                            <br />
+                            <span class="text-education"><strong>Institution:</strong> Sikkim Manipal Institute of
+                  Technology</span
+                ><br />
+                <span class="text-education"
+                  ><strong>Graduation Year:</strong> 2021</span
+                ><br />
+                <span class="text-education"
+                  ><strong>Relevant Coursework:</strong> As part of my
+                  undergraduate studies, I completed a comprehensive curriculum
+                  in computer science and engineering, gaining expertise in
+                  various programming languages, software development
+                  methodologies, and problem-solving techniques.</span
+                >
+              </div>
 
-                <section id="education" class="education hidden">
-                    <!-- Education Section Content -->
-                    <p>sdfsdf</p>
-                </section>
-
-                <section id="skills" class="skills hidden">
-                    <!-- Skills Section Content -->
-                    <p>csv</p>
-                </section>
-
-                <section id="projects" class="projects hidden">
-                    <p>werr</p>
-                    <!-- Projects Section Content -->
-                </section>
-
-                <section id="contact" class="contact hidden">
-                    <p>sdfwerwersdf</p>
-                    <!-- Contact Section Content -->
-                </section>
+              <div class="education-item">
+                <h6>Schooling at Tashi Namgyal Academy</h6>
+                <span class="text-education"
+                  ><strong>Year of Graduation:</strong> 2017</span
+                ><br />
+                <span class="text-education"
+                  ><strong>Roles:</strong> During my school days, I had the
+                  honor of being chosen as the House Prefect and later as the
+                  House Monitor, where I learned valuable leadership and
+                  organizational skills.</span
+                >
+              </div>
             </div>
+          </section>
+          <section id="about" class="section">
+            <div>
+              <span class="text"
+                >I'm Aditya Thapa, a passionate software developer dedicated to
+                crafting innovative solutions. <br />With a strong foundation in
+                web development and a commitment to lifelong learning, I thrive
+                on solving complex problems and delivering exceptional digital
+                experiences. <br />Let's connect and bring your ideas to life
+                through technology.</span
+              >
+            </div>
+          </section>
+
+          <section id="skills" class="section hidden">
+            <div class="">
+              <div>
+                <span class="text-education"
+                  ><strong>Programming Languages:</strong> Proficient in Java,
+                  Python, JavaScript, and C++.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Web Development:</strong> Experienced in front-end
+                  technologies such as HTML, CSS, and JavaScript frameworks
+                  (e.g., React).</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Mobile App Development:</strong> Developed mobile
+                  applications for Android using Java and Android Studio.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Database Management:</strong> Skilled in SQL and
+                  database design.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Software Development:</strong> Familiar with software
+                  development methodologies and version control systems.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Problem Solving:</strong> Strong analytical and
+                  problem-solving skills.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Team Collaboration:</strong> Effective team player
+                  with excellent communication and collaboration skills.</span
+                >
+              </div>
+            </div>
+          </section>
+          <section id="projects" class="section hidden">
+            <div class="">
+              <div>
+                <span class="text-education"
+                  ><strong>Pranali Project (Government of Sikkim):</strong>
+                  Worked as a developer on a contractual basis for the Pranali
+                  project, contributing to government initiatives in
+                  Sikkim.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Smart City Mission Gantok:</strong> Served as an IT
+                  Engineer for the Smart City Mission Gantok project,
+                  implementing innovative technology solutions for urban
+                  development.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong
+                    >Sikkim State Disaster Management Mobile
+                    Application:</strong
+                  >
+                  Developed a mobile application as a major project for the
+                  Sikkim State Disaster Management Department, enhancing
+                  disaster preparedness and response.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Mini Project - MRI Image Segmentation:</strong>
+                  Developed a mobile application for the automatic segmentation
+                  of MRI images as part of my bachelor's degree project.</span
+                >
+              </div>
+              <div>
+                <span class="text-education"
+                  ><strong>Shop Management System:</strong> Created a basic shop
+                  management system during industrial training at NICS, gaining
+                  practical experience in software development.</span
+                >
+              </div>
+            </div>
+          </section>
+          <section id="contact" class="section hidden">
+            <div class="">
+              <span class="text-education"
+                ><strong>Email:</strong> adityathapa712@gmail.com</span
+              ><br />
+              <span class="text-education"
+                ><strong>Phone:</strong> +91 (629) 642-9724</span
+              ><br />
+              <span class="text-education"
+                ><strong>LinkedIn:</strong>
+                <a
+                  href="https://www.linkedin.com/in/adityathapa712"
+                  target="_blank"
+                  >linkedin.com/in/adityathapa712</a
+                ></span
+              ><br />
+              <span class="text-education"
+                ><strong>GitHub:</strong>
+                <a href="https://github.com/aditya712" target="_blank"
+                  >github.com/aditya712</a
+                ></span
+              ><br />
+              <span class="text-education"
+                ><strong>Address:</strong> Gangtok, East Sikkim, India,
+                737-102</span
+              >
+            </div>
+          </section>
         </div>
+      </div>
     </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js" integrity="sha384-2f2c97b59e4788b42ea1e56b83d9fc2f27aa4b73ca6347fc2bfa45883af84d24" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js" integrity="sha384-mGZFfF4zXCp11RV0do7B5SsIf5F4JKwJf8CN1tz5z6Pc5z5IoTAMb8pKj5dso7VACr" crossorigin="anonymous"></script>
-<script>
-    function toggleSection(sectionId) {
-        const sections = document.querySelectorAll('.container section');
+
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function toggleSection(sectionId) {
+        console.log("Clicked", sectionId);
+        const sections = document.querySelectorAll(".container section");
+        console.log("sections", sections);
         const clickedSection = document.querySelector(sectionId);
+        console.log("clickedSection", clickedSection);
 
-        sections.forEach(section => {
-            if (section === clickedSection) {
-                section.classList.toggle("hidden", !section.classList.contains("hidden"));
-            } else {
-                section.classList.add("hidden");
-            }
+        sections.forEach((section) => {
+          if (section === clickedSection) {
+            section.classList.toggle(
+              "hidden",
+              !section.classList.contains("hidden")
+            );
+          } else {
+            section.classList.add("hidden");
+          }
         });
-    }
-</script>
-
+      }
+    </script>
+  </body>
 </html>
