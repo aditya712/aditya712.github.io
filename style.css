@@ -1,37 +1,33 @@
+@media screen and (min-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Latooo';
     }
-    
     body {
-        background-color: #ccc;
+        background-color: #555454;
         font-family: 'Latooo';
     }
-    
     .fullscreen-container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         overflow: hidden;
+        background-color: #555454;
     }
-    
     .nested-container {
         width: 50vh;
         height: 60vh;
         padding: 20px;
     }
-    
     .left {
         background-color: aliceblue;
     }
-    
     .right {
         background-color: rgb(240, 240, 240);
     }
-    
     .container {
         max-width: 960px;
         height: 40vh;
@@ -40,24 +36,20 @@
         padding-top: 3%;
         font-size: 2%;
     }
-    
     nav {
         background-color: transparent;
         color: #fff;
         height: fit-content;
     }
-    
     .nav-list {
         display: flex;
         list-style: none;
         padding: 0;
         justify-content: space-around;
     }
-    
     .nav-item {
         margin: 0;
     }
-    
     .nav-button {
         color: #fff;
         text-decoration: none;
@@ -71,104 +63,189 @@
         font-size: 1.4vh;
         font-family: LatoBold;
     }
-    
     .section {
         background-color: transparent;
-        height: max-content;
     }
-    
     .section .scrollable-content {
         height: 40vh;
     }
-    
     .scrollable-content::-webkit-scrollbar {
         display: none;
     }
-    
     .scrollable-content {
         scrollbar-width: none;
         -ms-overflow-style: none;
-        font-size: 1.5vw;
     }
-    
-    .text {
-        font-size: medium;
-        color: rgb(0, 0, 0);
+    .text {}
+    .text-education {}
+    .text-about {
+        padding-top: 10px;
     }
-    
-    .text-education {
-        font-size: small;
-        color: rgb(0, 0, 0);
-    }
-    
     .hidden {
         display: none
     }
-    
     .education-details {
         color: grey;
     }
-    
     .education-item {
         padding-bottom: 10px;
     }
-    
     .education-item h6 {
         color: rgb(0, 0, 0);
-        font-family: LatoBoldItalics;
         padding-bottom: 1px;
     }
-    
     .education-item span {
         display: block;
         margin-bottom: 1px;
     }
-    
-    @media screen and (max-width: 768px) {
-        .fullscreen-container {
-            flex-direction: column;
-            text-align: center;
-        }
-        .nested-container {
-            width: 90%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .container {
-            height: auto;
-            max-width: 100%;
-        }
-        .nav-list {
-            width: 80%;
-            flex-direction: column;
-            align-items: center;
-        }
-        .nav-item {
-            margin: 5px 0;
-        }
-        .nav-button {
-            font-size: 5vw;
-            padding: 10px 20px;
-        }
-        .nested-container.right {
-            padding: 5px;
-        }
-        .nested-container.right .content {
-            font-size: 4vw;
-        }
+    .scroll-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 70%;
+        background-color: #00000012;
+        padding-top: 3%;
+        border-radius: 5%;
     }
-    
-    @font-face {
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .projects-scroll {
+        height: 35vh;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         font-family: 'Latooo';
-        src: url('./Lato/Lato-BlackItalic.ttf') format('truetype');
     }
-    
-    @font-face {
-        font-family: 'LatoBold';
-        src: url('./Lato/Lato-Bold.ttf') format('truetype');
+    body {
+        background-color: #555454;
+        font-family: 'Latooo';
     }
-    
-    @font-face {
-        font-family: 'LatoBoldItalics';
-        src: url('./Lato/Lato-Black.ttf') format('truetype');
+    .fullscreen-container {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #555454;
     }
+    .nested-container {
+        width: 100%;
+        height: 80%;
+        padding: 20px;
+    }
+    .left {
+        background-color: aliceblue;
+        width: 100%;
+        height: 20%;
+    }
+    .right {
+        background-color: rgb(240, 240, 240);
+    }
+    .container {
+        max-width: 960px;
+        height: 40vh;
+        background-color: rgba(104, 104, 104, 0.29);
+        border-radius: 2%;
+        padding-top: 3%;
+        font-size: 2%;
+    }
+    nav {
+        background-color: transparent;
+        color: #fff;
+        height: fit-content;
+    }
+    .nav-list {
+        width: 100%;
+        display: block ruby;
+        list-style: none;
+        padding: 0;
+        justify-content: space-around;
+    }
+    .nav-item {
+        margin: 0;
+    }
+    .nav-button {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 11px;
+        background-color: rgb(127, 123, 123);
+        width: max-content;
+        border: none;
+        cursor: pointer;
+        border-radius: 8%;
+        font-size: 1.4vh;
+        font-family: LatoBold;
+    }
+    .section {
+        background-color: transparent;
+    }
+    .section .scrollable-content {
+        height: 40vh;
+    }
+    .scrollable-content::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollable-content {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .text-about {
+        padding-top: 10px;
+    }
+    .hidden {
+        display: none
+    }
+    .education-details {
+        color: grey;
+    }
+    .education-item {
+        padding-bottom: 10px;
+    }
+    .education-item h6 {
+        color: rgb(0, 0, 0);
+        padding-bottom: 1px;
+    }
+    .education-item span {
+        display: block;
+        margin-bottom: 1px;
+    }
+    .scroll-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 70%;
+        background-color: #00000012;
+        padding-top: 3%;
+        border-radius: 5%;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .projects-scroll {
+        height: 50vh;
+        overflow-y: scroll;
+    }
+}
+
+@font-face {
+    font-family: 'Latooo';
+    src: url('./Lato/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('./Lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LatoBoldItalics';
+    src: url('./Lato/Lato-Black.ttf') format('truetype');
+}
