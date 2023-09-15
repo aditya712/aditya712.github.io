@@ -51,7 +51,7 @@
         height: fit-content;
     }
     .nav-list {
-        display: table-row;
+        display: ruby;
         list-style: none;
         padding: 0;
         justify-content: space-around;
@@ -184,7 +184,7 @@
     }
     .nav-list {
         width: 100%;
-        display: block ruby;
+        display: ruby;
         list-style: none;
         padding: 0;
         justify-content: space-around;
