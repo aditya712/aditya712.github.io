@@ -30,7 +30,9 @@
         height: 60vh;
         padding: 20px;
     }
-    .left {}
+    .left {
+        contain: content;
+    }
     .img {
         vertical-align: middle;
         border-style: none;
@@ -38,9 +40,14 @@
         width: 119%;
         padding-right: 20%;
         padding-top: 56px;
+        border: black;
+        border-radius: 60%;
+        object-fit: cover;
     }
     .right {
         background-color: #98c1d9;
+        width: 40%;
+        padding-left: 50px;
     }
     .container {
         max-width: 960px;
@@ -64,6 +71,7 @@
     }
     .nav-item {
         margin: 0;
+        padding-right: 2px;
     }
     .nav-button {
         color: #fff;
@@ -75,7 +83,7 @@
         border: none;
         cursor: pointer;
         border-radius: 8%;
-        font-size: 1.4vh;
+        font-size: 2.2vh;
         font-family: LatoBold;
     }
     .section {
@@ -123,6 +131,7 @@
         background-color: #00000012;
         padding-top: 3%;
         border-radius: 5%;
+        padding-bottom: 4%;
     }
     /* Hide scrollbar for IE, Edge and Firefox */
     .projects-scroll {
@@ -167,18 +176,15 @@
     }
     .left {
         width: 100%;
-        height: 10%;
+        height: 15%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: -110px;
     }
     .img {
-        vertical-align: middle;
-        border-style: none;
-        height: 95%;
-        width: 119%;
-        padding-right: 20%;
-        padding-top: 56px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .right {
         background-color: #98c1d9;
@@ -190,11 +196,11 @@
         border-radius: 2%;
         padding-top: 3%;
         font-size: 2%;
+        padding-bottom: 3%;
     }
-    nav {
-        background-color: transparent;
-        color: #fff;
-        height: fit-content;
+    .nav {
+        height: 6vh;
+        overflow: hidden;
     }
     .nav-list {
         display: -webkit-inline-box;
@@ -202,23 +208,24 @@
         padding: 0;
         justify-content: space-evenly;
         width: 100%;
+        padding-left: 20px;
     }
     .nav-item {
-        margin: 0;
-        padding-right: 1%;
+        padding-left: 10px;
     }
     .nav-button {
         color: #fff;
         text-decoration: none;
         font-weight: bold;
-        padding: 3px 4px;
+        padding: 7px 7px;
         background-color: #293241;
         width: max-content;
         border: none;
         cursor: pointer;
-        border-radius: 6%;
-        font-size: 1.4vh;
+        border-radius: 11%;
+        font-size: 1.8vh;
         font-family: LatoBold;
+        height: 40px;
     }
     .section {
         background-color: transparent;
@@ -263,11 +270,15 @@
         background-color: #00000012;
         padding-top: 3%;
         border-radius: 5%;
+        padding-bottom: 3%;
     }
     /* Hide scrollbar for IE, Edge and Firefox */
     .projects-scroll {
         height: 50vh;
         overflow-y: scroll;
+    }
+    .content {
+        padding-left: 15px;
     }
 }
 
